@@ -1,6 +1,6 @@
 {
   "name": "vuenity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue.js wrapper with communications for WebGL Unity games.",
   "main": "dist/vuenity.umd.js",
   "module": "dist/vuenity.esm.js",
