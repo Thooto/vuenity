@@ -1,32 +1,41 @@
 {
-    "name": "vuenity",
-    "version": "1.0.0",
-    "description": "A Vue.js wrapper with communications for WebGL Unity games.",
-    "main": "dist/vuenity.umd.js",
-    "module": "dist/vuenity.esm.js",
-    "unpkg": "dist/vuenity.min.js",
-    "browser": {
-        "./sfc": "src/vuenity.vue"
-    },
-    "scripts": {
-        "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-        "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vuenity.umd.js",
-        "build:es": "rollup --config build/rollup.config.js --format es --file dist/vuenity.esm.js",
-        "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vuenity.min.js"
-    },
-    "keywords": [
-        "vue",
-        "unity",
-        "webgl"
-    ],
-    "author": "thooto",
-    "license": "MIT",
-    "devDependencies": {
-        "rollup": "^1.14.3",
-        "rollup-plugin-buble": "^0.19.6",
-        "rollup-plugin-commonjs": "^10.0.0",
-        "rollup-plugin-vue": "^5.0.0",
-        "vue": "^2.6.10",
-        "vue-template-compiler": "^2.6.10"
-    }
+  "name": "vuenity",
+  "version": "1.0.0",
+  "description": "A Vue.js wrapper with communications for WebGL Unity games.",
+  "main": "dist/vuenity.umd.js",
+  "module": "dist/vuenity.esm.js",
+  "unpkg": "dist/vuenity.min.js",
+  "browser": {
+    "./sfc": "src/vuenity.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vuenity.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vuenity.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vuenity.min.js"
+  },
+  "keywords": [
+    "vue",
+    "unity",
+    "webgl"
+  ],
+  "author": "thooto",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.14.3",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thooto/vuenity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thooto/vuenity/issues"
+  },
+  "homepage": "https://github.com/Thooto/vuenity#readme"
 }
