@@ -1,9 +1,9 @@
-import vuenity from "./vuenity.vue";
+import Vuenity from "./vuenity.vue";
 
 export function install(Vue) {
     if (install.installed) return;
     install.installed = true;
-    Vue.component("Vuenity", vuenity);
+    Vue.component("Vuenity", Vuenity);
 }
 
 const plugin = {
@@ -22,4 +22,6 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default vuenity;
+export default Vuenity;
+
+export { UnityContent } from "./unity-content";
