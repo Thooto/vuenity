@@ -10,7 +10,7 @@ export default {
         exports: "named"
     },
     plugins: [
-        babel({ presets: ["es2015-rollup", "stage-0"] }),
+        babel({ presets: ["@babel/preset-env"], plugins: ["@babel/plugin-proposal-class-properties"] }),
         vue({
             css: true,
             compileTemplate: true

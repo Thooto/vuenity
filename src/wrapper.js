@@ -24,4 +24,6 @@ if (GlobalVue) {
 
 export default Vuenity;
 
-export { UnityContent } from "./unity-content";
+export * from "./unity-content";
+
+//export { UnityContent } from "./unity-content";
