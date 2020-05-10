@@ -37,6 +37,11 @@ A Vue.js wrapper component for Unity WebGL player based on [react-unity-webgl](h
             });
 
             this.unityContent.message("HelloWorld", "Some nice words");
+        },
+        methods: {
+            setFullScreen() {
+                this.unityContent.unityInstance.setFullScreen(true);
+            }
         }
     };
 </script>
