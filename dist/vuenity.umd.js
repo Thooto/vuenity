@@ -488,6 +488,8 @@
   }
    //export { UnityContent } from "./unity-content";
 
+  exports.UnityContent = UnityContent;
+  exports.Vuenity = __vue_component__;
   exports.default = __vue_component__;
   exports.install = install;
 

@@ -1,4 +1,6 @@
 import Vuenity from "./vuenity.vue";
+import UnityContent from "./unity-content";
+
 
 export function install(Vue) {
     if (install.installed) return;
@@ -23,7 +25,6 @@ if (GlobalVue) {
 }
 
 export default Vuenity;
-
-export * from "./unity-content";
+export { Vuenity, UnityContent }
 
 //export { UnityContent } from "./unity-content";

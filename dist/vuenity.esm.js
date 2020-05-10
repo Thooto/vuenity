@@ -483,4 +483,4 @@ if (GlobalVue) {
  //export { UnityContent } from "./unity-content";
 
 export default __vue_component__;
-export { install };
+export { UnityContent, __vue_component__ as Vuenity, install };
