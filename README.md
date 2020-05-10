@@ -15,7 +15,8 @@ A Vue.js wrapper component for Unity WebGL player based on [react-unity-webgl](h
 </template>
 
 <script>
-    import Vuenity from "vuenity";
+    import Vuenity, { UnityContent } from "vuenity";
+
 
     export default {
         components: { Vuenity },
@@ -23,8 +24,8 @@ A Vue.js wrapper component for Unity WebGL player based on [react-unity-webgl](h
         data() {
             return {
                 unityContent: new UnityContent(
-                    "Build/your_unity_project.json",
-                    "Build/UnityLoader.js"
+                    "Build/your_unity_project.json||http://localhost:1000/file.json",
+                    "Build/UnityLoader.js||http://localhost:1000/UnityLoader.js"
                 ),
                 message: undefined
             };
@@ -42,6 +43,7 @@ A Vue.js wrapper component for Unity WebGL player based on [react-unity-webgl](h
 ```
 
 `Build` folder should be in your `public` folder.
+In case you use something like Laravel + Vue.js and webpack, use an address instead of a direct folder ref. 
 
 In your Unity project, under `Assets/Plugins/WebGL/` (or anywhere else in assets) create a `VuePlugin.jslib` with:
 
